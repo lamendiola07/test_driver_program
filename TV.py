@@ -21,6 +21,10 @@ class TV:
         self.channel = int(input("Enter channel: "))
         for i in range(0,self.channel):
             self.channel = self.channel
+            print(self.channel)
+
+            increase_channel = input("Increase channel number? (type '^' to increase channel number) :")
+            self.channel = increase_channel + self.channel
             return self.channel
     
     #Constructing a Volume Level object
