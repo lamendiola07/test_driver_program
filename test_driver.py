@@ -2,18 +2,15 @@
 
 from TV import TV
 
-TV()
 def TvUnit():
     #Creating a Television Model Number #1
     television_one = TV()
-    print(television_one.setTvModel())
-    print(television_one.getPowerButton())
-    print(television_one.getTvChannel())
-    print(television_one.getTvVolume())
-    print(television_one.setTvModel, "'s channel is " + television_one.getTvChannel + "and volume level is" + television_one.getTvVolume)
+    television_one = print(television_one.TvModel(),"'s channel is", television_one.TvChannel(), "and volume level is", television_one.TvVolume())
     
-    
+    print("\n\n")
     #Creating a Television Model Number #2
+    television_two = TV()
+    print(television_two.TvModel(),"'s channel is", television_two.TvChannel(), "and volume level is", television_two.TvVolume())
 
-
+   
 TvUnit()
