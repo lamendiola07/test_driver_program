@@ -23,9 +23,14 @@ class TV:
             self.channel = self.channel
             print(self.channel)
 
-            increase_channel = input("Increase channel number? (type '^' to increase channel number) :")
-            self.channel = increase_channel + self.channel
-            return self.channel
+            change_channel = input("change channel number? (type '^' or 'v' to increase/decrease channel number) :")
+            if change_channel == "^":
+                self.channel = self.channel + 1
+                return self.channel
+
+            elif change_channel == "v":
+                self.channel = self.channel - 1
+                return self.channel
     
     #Constructing a Volume Level object
     def TvVolume(self):
