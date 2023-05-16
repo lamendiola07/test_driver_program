@@ -2,7 +2,18 @@
 
 from TV import TV
 
-television_one = TV("Apple TV", "off", 2, 50)
-print(television_one.PowerButton())
-print(television_one.TvChannel())
-print(television_one.TvVolume())
+TV()
+def TvUnit():
+    #Creating a Television Model Number #1
+    television_one = TV()
+    print(television_one.setTvModel())
+    print(television_one.getPowerButton())
+    print(television_one.getTvChannel())
+    print(television_one.getTvVolume())
+    print(television_one.setTvModel, "'s channel is " + television_one.getTvChannel + "and volume level is" + television_one.getTvVolume)
+    
+    
+    #Creating a Television Model Number #2
+
+
+TvUnit()
