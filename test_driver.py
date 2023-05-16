@@ -10,7 +10,7 @@ def TvUnit():
 
       
     print("\n\n")
-    open
+
     #Creating a Television Model Number #2
     television_two = TV()
     print(television_two.PowerButton())
