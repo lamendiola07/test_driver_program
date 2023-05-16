@@ -23,6 +23,7 @@ class TV:
             self.channel = self.channel
             print(self.channel)
 
+            #Changing channel number
             change_channel = input("change channel number? (type '^' or 'v' to increase/decrease channel number) :")
             if change_channel == "^":
                 self.channel = self.channel + 1
@@ -37,7 +38,17 @@ class TV:
         self.volume = int(input("Enter Volume Level: "))
         for i in range(0,self.volume):
             self.volume = self.volume
-            return self.volume
+        
+            change_volume = input("change volume level? (type '^' or 'v' to increase/decrease channel number) :")
+
+            #Changing volume level
+            if change_volume == "^":
+                self.volume = self.volume + 1
+                return self.volume
+
+            elif change_volume == "v":
+                self.volume = self.volume - 1
+                return self.volume
     
     def TvModel(self):
         self.model = input("What is your TV Model? ")
